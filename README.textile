@@ -1,0 +1,28 @@
+h1. GCPagedScrollView
+
+Simple @UIScrollView@ subclass that automatically handle @UIPageControl@ and paged content.
+
+You can have a paged @UIScrollView@ with @UIPageControl@ in almost no time.
+
+!http://littlekiwi.co.cc/GithubImages/GCPagedScrollView.png!
+
+h2. Usage
+
+(See the demo project included)
+
+You simply allocate the scroll view like you would normally, but instead of adding subviews directly, add *content* subviews with one of these methods.
+
+<pre>
+- (void) addContentSubview:(UIView*) view;
+- (void) addContentSubview:(UIView*) view atIndex:(NSUInteger) index;
+</pre>
+
+The views will be placed and managed automatically.
+
+You can remove content view with these methods.
+
+<pre>
+- (void) removeContentSubview:(UIView*) view;
+- (void) removeContentSubviewAtIndex:(NSUInteger) index;
+- (void) removeAllContentSubview;
+</pre>
