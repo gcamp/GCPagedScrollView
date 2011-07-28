@@ -82,7 +82,7 @@ const CGFloat GCPagedScrollViewPageControlHeight = 36.0;
     [self removeContentSubview:[self.views objectAtIndex:index]];
 }
 
-- (void) removeAllContentSubview {
+- (void) removeAllContentSubviews {
     for (UIView* view in self.views) {
         [view removeFromSuperview];
     }

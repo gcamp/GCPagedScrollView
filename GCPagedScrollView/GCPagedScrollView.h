@@ -20,6 +20,6 @@
 - (void) addContentSubview:(UIView*) view atIndex:(NSUInteger) index;
 - (void) removeContentSubview:(UIView*) view;
 - (void) removeContentSubviewAtIndex:(NSUInteger) index;
-- (void) removeAllContentSubview;
+- (void) removeAllContentSubviews;
 
 @end
