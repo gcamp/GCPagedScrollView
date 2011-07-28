@@ -24,5 +24,5 @@ You can remove content views with these methods.
 <pre>
 - (void) removeContentSubview:(UIView*) view;
 - (void) removeContentSubviewAtIndex:(NSUInteger) index;
-- (void) removeAllContentSubview;
+- (void) removeAllContentSubviews;
 </pre>
