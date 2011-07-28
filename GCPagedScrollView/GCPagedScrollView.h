@@ -18,6 +18,8 @@
 //Add or remove content view from the scrollview
 - (void) addContentSubview:(UIView*) view;
 - (void) addContentSubview:(UIView*) view atIndex:(NSUInteger) index;
+- (void) addContentSubviewsFromArray:(NSArray*) contentViews;
+
 - (void) removeContentSubview:(UIView*) view;
 - (void) removeContentSubviewAtIndex:(NSUInteger) index;
 - (void) removeAllContentSubviews;

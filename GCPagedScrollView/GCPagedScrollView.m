@@ -71,6 +71,12 @@ const CGFloat GCPagedScrollViewPageControlHeight = 36.0;
     self.contentOffset = CGPointMake(0, - self.scrollIndicatorInsets.top);
 }
 
+- (void)addContentSubviewsFromArray:(NSArray *)contentViews {
+    for (UIView* contentView in contentViews) {
+        [self addContentSubview:contentView];
+    }
+}
+
 - (void) removeContentSubview:(UIView *)view {
     [view removeFromSuperview];
     

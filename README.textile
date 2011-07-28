@@ -15,6 +15,7 @@ You simply allocate the scroll view like you would normally, but instead of addi
 <pre>
 - (void) addContentSubview:(UIView*) view;
 - (void) addContentSubview:(UIView*) view atIndex:(NSUInteger) index;
+- (void) addContentSubviewsFromArray:(NSArray*) contentViews;
 </pre>
 
 The views will be placed and managed automatically.
