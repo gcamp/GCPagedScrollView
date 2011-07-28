@@ -95,12 +95,11 @@ const CGFloat GCPagedScrollViewPageControlHeight = 36.0;
 #pragma mark Layout
 
 - (void) updateViewPositionAndPageControl {
-    NSUInteger index = 0;
-    for (UIView* view in self.views) {
-        view.center = CGPointMake(self.frame.size.width * index + self.frame.size.width / 2, 
+    [self.views enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        UIView* view = (UIView*) obj;
+        view.center = CGPointMake(self.frame.size.width * idx + self.frame.size.width / 2, 
                                   (self.frame.size.height - GCPagedScrollViewPageControlHeight) / 2);
-        index ++;
-    }
+    }];
     
     UIEdgeInsets inset = self.scrollIndicatorInsets;
     CGFloat heightInset = inset.top + inset.bottom;
